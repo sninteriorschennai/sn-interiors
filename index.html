@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SN Interiors | PVC, UPVC & Plywood Interiors</title>
+<meta name="description" content="SN Interiors offers customised PVC, UPVC and plywood kitchens, wardrobes, TV units, pooja units and complete interiors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#24160e;--brown:#4b2813;--gold:#e9a744;--gold2:#f5c16b;--cream:#fffaf4;--muted:#76675b;--line:#eadccd}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.55}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{text-decoration:none;color:inherit}
+.container{width:min(94%,1440px);margin:auto}
+header{height:68px;position:sticky;top:0;z-index:20;background:rgba(255,251,246,.97);box-shadow:0 3px 18px #2b170d12;backdrop-filter:blur(12px)}
+.navbar{height:100%;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:center;gap:10px;white-space:nowrap}
+.brand-mark{font-size:30px;color:#a96c27}
+.brand-name{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;line-height:1.05}
+.brand-name span{color:#b77a2e}
+.brand-tag{font-size:8px;letter-spacing:2px;color:#876342;margin-top:4px}
+nav{display:flex;gap:25px;align-items:center}
+nav a{font-size:12px;font-weight:700;transition:color .2s}
+nav a:hover{color:#b7792a}
+.phone-btn{background:#3b1e0d;color:white;border-radius:9px;padding:11px 17px;font-size:12px;font-weight:700;white-space:nowrap}
+.hero{min-height:430px;position:relative;color:#fff;display:flex;align-items:center;background:linear-gradient(90deg,rgba(24,12,5,.97) 0%,rgba(30,15,6,.88) 28%,rgba(35,18,7,.25) 58%,rgba(20,10,5,.05) 100%),url('images/hero-kitchen.jpg') center 54%/cover no-repeat}
+.hero-content{padding:48px 0 42px;max-width:480px}
+.eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:700;color:#a76528;margin-bottom:8px}
+.hero .eyebrow{color:#f1c16f;line-height:1.6}
+.hero h1{font:800 clamp(36px,4.2vw,54px)/.99 'Playfair Display',serif;letter-spacing:-.7px;margin:12px 0}
+.hero h1 span{color:#f2b653}
+.hero p{font-size:15px;line-height:1.5;max-width:380px;color:#f5e9dc}
+.hero-points{display:flex;gap:18px;margin:19px 0 22px;font-size:11px}
+.hero-points span{display:flex;align-items:center;gap:7px}
+.check{border:2px solid var(--gold);color:var(--gold);width:23px;height:23px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex:none}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:9px;padding:13px 20px;font-size:13px;font-weight:700;transition:.25s}
+.btn-gold{background:var(--gold);color:#211307}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn-outline{border:1px solid #fff;color:#fff;background:#1d10084d}
+.btn-outline:hover{background:#fff;color:#2b1b10}
+.section{padding:34px 0}
+.section-heading{text-align:center;margin-bottom:20px}
+.section-heading .eyebrow{margin-bottom:3px;color:#8b4b20}
+.section-heading h2{font:700 clamp(24px,3vw,34px)/1.2 'Playfair Display',serif}
+.section-heading h2:after{content:"";display:block;width:38px;height:2px;background:var(--gold);margin:8px auto 0}
+.section-heading p{font-size:13px;color:var(--muted);margin:8px auto 0;max-width:600px}
+.pricing{background:#fffaf5}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.price-card{height:220px;display:grid;grid-template-columns:52% 48%;overflow:hidden;border:1px solid #e8d8c8;border-radius:9px;background:#fff;box-shadow:0 5px 15px #4b2b1710;transition:.3s}
+.price-card:hover{transform:translateY(-4px);box-shadow:0 12px 25px #4b2b1720}
+.price-info{position:relative;z-index:1;background:linear-gradient(120deg,#fffdf9,#fff7ed);padding:14px 16px}
+.price-title{margin:-14px -16px 12px;padding:10px 14px;background:#9a5c24;color:#fff;font-size:12px;font-weight:700}
+.price-card:nth-child(2) .price-title{background:#4d4d4b}
+.price-card:nth-child(3) .price-title{background:#8d4d1b}
+.price-label{font-size:11px}
+.price{font-size:27px;font-weight:800;line-height:1.25;color:#542d17;margin:2px 0 8px;white-space:nowrap}
+.price small{font-size:12px}
+.price-info ul{list-style:none;font-size:11px;line-height:1.8}
+.price-info li:before{content:"✓";display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;border-radius:50%;background:#e9a13d;color:#24160e;font-size:10px;font-weight:800;margin-right:7px}
+.price-image{overflow:hidden}
+.price-image img{transition:transform .5s}
+.price-card:hover .price-image img{transform:scale(1.06)}
+.price-note{text-align:center;font-size:11px;color:#76675b;margin-top:12px}
+.gallery-section{background:#fffdf9}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gallery-card{height:183px;position:relative;overflow:hidden;border-radius:8px;background:#ddd;box-shadow:0 3px 10px #3d251512;isolation:isolate;transition:transform .3s,box-shadow .3s}
+.gallery-card:hover{transform:translateY(-5px) perspective(700px) rotateX(1deg);box-shadow:0 13px 25px #3d25152b}
+.gallery-card img{transition:transform .55s}
+.gallery-card:hover img{transform:scale(1.07)}
+.gallery-card:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(18,10,5,.48));z-index:0}
+.gallery-label{position:absolute;bottom:10px;left:10px;z-index:1;background:#24160edb;color:#fff;padding:6px 11px;border-radius:5px;font-size:12px;font-weight:700}
+.gallery-arrow{position:absolute;bottom:9px;right:10px;z-index:2;background:var(--gold);color:#27170b;width:29px;height:29px;border-radius:50%;display:grid;place-items:center;font-size:17px;font-weight:700;box-shadow:0 2px 8px #0002}
+.before-after{display:grid;grid-template-columns:1fr 1fr;height:100%}
+.before-after img{min-width:0}
+.before-after span{position:absolute;top:10px;background:#24160edb;color:white;padding:4px 9px;border-radius:4px;font-size:11px;font-weight:700}
+.before-after .before{left:10px}.before-after .after{right:10px}
+.why{background:#f4e9dc;padding:22px 0}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.why-item{display:flex;align-items:center;justify-content:center;gap:12px;padding:8px;border-right:1px solid #e4d3c0}
+.why-item:last-child{border:0}
+.why-icon{font-size:27px;color:#c88935}
+.why-item strong{display:block;font-size:12px}
+.why-item small{display:block;color:#76675b;font-size:10px}
+.contact{background:linear-gradient(90deg,rgba(25,13,6,.95),rgba(25,13,6,.88)),url('images/hero-kitchen.jpg') center/cover;color:#fff}
+.contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center}
+.contact .eyebrow{color:#f2b653}
+.contact h2{font:700 clamp(25px,3vw,34px)/1.2 'Playfair Display',serif;margin:5px 0 9px}
+.contact p{font-size:13px;color:#e6d8cb}
+.contact-links{display:grid;gap:12px;font-size:13px}
+.contact-links a{overflow-wrap:anywhere}
+.contact-links a:hover{color:#f2b653}
+.contact-links strong{color:#f2b653;display:block;font-size:10px;letter-spacing:1px;text-transform:uppercase}
+.whatsapp{background:#159b53;color:white;margin-top:15px}
+footer{text-align:center;background:#1c110a;color:#cdbcae;padding:16px;font-size:11px}
+footer span{color:#efb451}
+.floating-wa{position:fixed;right:18px;bottom:18px;z-index:30;background:#159b53;color:#fff;border-radius:30px;padding:12px 17px;font-size:12px;font-weight:700;box-shadow:0 5px 18px #0003}
+@media(max-width:1000px){nav{gap:13px}.pricing-grid{gap:10px}.price-card{grid-template-columns:55% 45%;height:210px}.price-info{padding:12px}.price-title{margin:-12px -12px 10px;padding:9px 11px}.price{font-size:23px}.gallery-card{height:160px}}
+@media(max-width:760px){header{height:auto}.navbar{min-height:64px;flex-wrap:wrap;padding:10px 0;justify-content:center}.brand{margin-right:auto}nav{order:3;width:100%;justify-content:center;flex-wrap:wrap;padding:4px 0 7px;gap:15px}.phone-btn{font-size:11px;padding:9px 12px}.hero{min-height:490px;background-position:62% center}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,12,5,.88),rgba(24,12,5,.45))}.hero-content{position:relative;padding:42px 0}.hero h1{font-size:clamp(38px,9vw,50px)}.hero-points{gap:10px;flex-wrap:wrap}.section{padding:28px 0}.pricing-grid{grid-template-columns:1fr}.price-card{height:205px;grid-template-columns:52% 48%}.price-info{padding:14px}.price-title{margin:-14px -14px 12px;padding:10px 14px}.price{font-size:27px}.gallery-grid{grid-template-columns:repeat(2,1fr);gap:9px}.gallery-card{height:150px}.gallery-label{font-size:11px;left:7px;bottom:7px;padding:5px 8px}.gallery-arrow{right:7px;bottom:7px;width:26px;height:26px}.why-grid{grid-template-columns:repeat(2,1fr)}.why-item{justify-content:flex-start;border-right:0;padding:8px}.contact-grid{grid-template-columns:1fr;gap:22px}}
+@media(max-width:420px){.container{width:93%}.brand-name{font-size:19px}.brand-mark{font-size:25px}nav{gap:10px}nav a{font-size:11px}.hero p{font-size:14px}.hero-points{font-size:10px}.actions .btn{font-size:12px;padding:12px 14px}.gallery-card{height:125px}.gallery-label{font-size:10px}.price{font-size:24px}.price-info ul{font-size:10px}.floating-wa{right:10px;bottom:10px;padding:10px 13px;font-size:11px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="container navbar">
+  <a class="brand" href="#home"><span class="brand-mark">⌂</span><span><div class="brand-name">SN <span>INTERIORS</span></div><div class="brand-tag">YOUR SPACE · OUR EXPERTISE</div></span></a>
+  <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#pricing">Pricing</a><a href="#gallery">Gallery</a><a href="#why-us">Why Us</a><a href="#contact">Contact</a></nav>
+  <a class="phone-btn" href="tel:7305130810">☎ 7305130810</a>
+ </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="container"><div class="hero-content">
+ <div class="eyebrow">Modern Interiors<br>For a Better Tomorrow</div>
+ <h1>Beautiful<br>Interiors.<br><span>Smart Living.</span></h1>
+ <p>Customised PVC, UPVC &amp; Plywood interior solutions for your home and office.</p>
+ <div class="hero-points"><span><i class="check">✓</i>Quality<br>Workmanship</span><span><i class="check">✓</i>Modern<br>Designs</span><span><i class="check">✓</i>Affordable<br>Pricing</span></div>
+ <div class="actions"><a class="btn btn-gold" href="https://wa.me/917305130810?text=Hi%20SN%20Interiors%2C%20I%20would%20like%20a%20free%20quotation" target="_blank" rel="noopener">☏ Get a Free Quote</a><a class="btn btn-outline" href="#gallery">View Our Works&nbsp; →</a></div>
+</div></div></section>
+<section class="section pricing" id="pricing"><div class="container">
+ <div class="section-heading"><div class="eyebrow">Our Starting Prices</div><h2>Affordable Interiors for Every Home</h2></div>
+ <div class="pricing-grid">
+  <article class="price-card"><div class="price-info"><div class="price-title">PVC INTERIORS</div><div class="price-label">Starting from</div><div class="price">₹250 <small>/ sq.ft</small></div><ul><li>Kitchens</li><li>Wardrobes</li><li>Storage Units</li><li>Customised Designs</li></ul></div><div class="price-image"><img src="images/pvc-kitchen.jpg" alt="PVC modular kitchen interior"></div></article>
+  <article class="price-card"><div class="price-info"><div class="price-title">UPVC INTERIORS</div><div class="price-label">Starting from</div><div class="price">₹350 <small>/ sq.ft</small></div><ul><li>Kitchens</li><li>Wardrobes</li><li>Storage Units</li><li>Customised Designs</li></ul></div><div class="price-image"><img src="images/upvc-kitchen.jpg" alt="UPVC kitchen interior"></div></article>
+  <article class="price-card"><div class="price-info"><div class="price-title">PLYWOOD INTERIORS</div><div class="price-label">Starting from</div><div class="price">₹750 <small>/ sq.ft</small></div><ul><li>Kitchens</li><li>Wardrobes</li><li>Storage Units</li><li>Customised Designs</li></ul></div><div class="price-image"><img src="images/plywood-wardrobe.jpg" alt="Plywood wardrobe interior"></div></article>
+ </div><p class="price-note">*Final cost depends on design, dimensions, materials and fittings. Contact us for a detailed quotation.</p>
+</div></section>
+<section class="section gallery-section" id="gallery"><div class="container">
+ <div class="section-heading"><div class="eyebrow">Our Recent Works</div><h2>Explore Our Latest Projects</h2></div>
+ <div class="gallery-grid">
+  <article class="gallery-card"><img src="images/modular-kitchen.jpg" alt="Modular kitchen project"><span class="gallery-label">Modular Kitchen</span><span class="gallery-arrow">↗</span></article>
+  <article class="gallery-card"><img src="images/bedroom-wardrobe.jpg" alt="Bedroom wardrobe project"><span class="gallery-label">Bedroom Wardrobe</span><span class="gallery-arrow">↗</span></article>
+  <article class="gallery-card"><img src="images/tv-unit.jpg" alt="TV unit project"><span class="gallery-label">TV Unit</span><span class="gallery-arrow">↗</span></article>
+  <article class="gallery-card"><img src="images/pooja-unit.jpg" alt="Pooja unit project"><span class="gallery-label">Pooja Unit</span><span class="gallery-arrow">↗</span></article>
+  <article class="gallery-card"><img src="images/upvc-kitchen-gallery.jpg" alt="UPVC kitchen project"><span class="gallery-label">UPVC Kitchen</span><span class="gallery-arrow">↗</span></article>
+  <article class="gallery-card"><img src="images/wardrobe-full-height.jpg" alt="Full height wardrobe project"><span class="gallery-label">Full Height Wardrobe</span><span class="gallery-arrow">↗</span></article>
+  <article class="gallery-card"><img src="images/storage-cabinets.jpg" alt="Storage cabinet project"><span class="gallery-label">Storage Cabinets</span><span class="gallery-arrow">↗</span></article>
+  <article class="gallery-card"><div class="before-after"><img src="images/bedroom-wardrobe.jpg" alt="Interior before"><img src="images/plywood-wardrobe.jpg" alt="Interior after"></div><span class="before">Before</span><span class="after">After</span><span class="gallery-label">Transformation</span><span class="gallery-arrow">↗</span></article>
+ </div>
+</div></section>
+<section class="why" id="why-us"><div class="container why-grid">
+ <div class="why-item"><span class="why-icon">♢</span><div><strong>Quality Materials</strong><small>Durable &amp; long-lasting</small></div></div>
+ <div class="why-item"><span class="why-icon">⚒</span><div><strong>Expert Installation</strong><small>Professional team</small></div></div>
+ <div class="why-item"><span class="why-icon">✥</span><div><strong>Customised Designs</strong><small>Tailored to your space</small></div></div>
+ <div class="why-item"><span class="why-icon">♙</span><div><strong>Affordable Pricing</strong><small>Best value for money</small></div></div>
+</div></section>
+<section class="section contact" id="contact"><div class="container contact-grid">
+ <div><div class="eyebrow">Contact Us</div><h2>Let's Build Your Dream Interior</h2><p>Get in touch with SN Interiors for enquiries and quotations.</p><a class="btn whatsapp" href="https://wa.me/917305130810?text=Hi%20SN%20Interiors%2C%20I%20would%20like%20a%20quotation" target="_blank" rel="noopener">☏ Chat on WhatsApp</a></div>
+ <div class="contact-links"><div><strong>Phone</strong><a href="tel:7305130810">7305130810</a></div><div><strong>Email</strong><a href="mailto:sninteriors0810@gmail.com">sninteriors0810@gmail.com</a></div><div><strong>Services</strong><span>PVC · UPVC · Plywood · All Interior Works</span></div></div>
+</div></section>
+</main>
+<footer>© 2026 <span>SN Interiors</span>. All rights reserved.</footer>
+<a class="floating-wa" href="https://wa.me/917305130810?text=Hi%20SN%20Interiors" target="_blank" rel="noopener" aria-label="Chat with SN Interiors on WhatsApp">☏ Chat on WhatsApp</a>
+</body></html>
